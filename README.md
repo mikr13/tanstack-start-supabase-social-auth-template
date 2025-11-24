@@ -67,34 +67,6 @@ bun run dev
 
 Open [http://localhost:3000](http://localhost:3000) to see your app.
 
-## Project Structure
-
-```
-src/
-├── app/                      # TanStack Router routes
-│   ├── __root.tsx           # Root layout
-│   ├── index.tsx            # Landing page
-│   ├── _authed.tsx          # Authenticated layout
-│   ├── _authed/
-│   │   └── dashboard.tsx    # Protected dashboard
-│   ├── (auth)/
-│   │   ├── route.tsx        # Auth layout
-│   │   └── login.tsx        # Login page
-│   └── routes/
-│       └── oauth.ts         # OAuth callback handler
-├── components/
-│   └── ui/                  # UI components
-│       ├── button.tsx
-│       └── card.tsx
-├── lib/
-│   ├── supabase/
-│   │   ├── client.ts        # Browser Supabase client
-│   │   └── server.ts        # Server Supabase client
-│   └── utils.ts             # Utility functions
-└── stores/
-    └── auth-store.ts        # Auth state management
-```
-
 ## Available Scripts
 
 - `bun run dev` - Start development server
@@ -153,20 +125,7 @@ To add/remove providers, edit:
 
 ## Deployment
 
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Import project on [Vercel](https://vercel.com)
-3. Add environment variables
-4. Deploy
-
-### Other Platforms
-
-Build the production bundle:
-
-```bash
-bun run build
-```
+Checkout [Tanstack Start hosting guidelines here](https://tanstack.com/start/latest/docs/framework/react/guide/hosting).
 
 The output will be in `.output/`. Deploy the `server` folder.
 
